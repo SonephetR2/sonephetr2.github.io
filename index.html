@@ -47,7 +47,7 @@ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE." />
 <link id="faviconLink" rel="shortcut icon" href="favicon.ico">
-<title>TiddlyWiki — a non-linear personal web notebook</title>
+<title>My TiddlyWiki — a non-linear personal web notebook</title>
 <!--~~ This is a Tiddlywiki file. The points of interest in the file are marked with this pattern ~~-->
 
 <!--~~ Raw markup ~~-->
@@ -139,7 +139,26 @@ Error message and password prompt
 <div id="splashArea">
 
 
-<div class=" tc-reveal" hidden="true"></div>
+<p>This <a class="tc-tiddlylink-external" href="https://tiddlywiki.com" rel="noopener noreferrer" target="_blank">TiddlyWiki</a> contains the following tiddlers:</p><p><ul>
+
+<li>$:/core</li>
+
+<li>$:/Import</li>
+
+<li>$:/isEncrypted</li>
+
+<li>$:/plugins/tobibeer/random</li>
+
+<li>$:/status/RequireReloadDueToPluginChange</li>
+
+<li>$:/StoryList</li>
+
+<li>$:/themes/tiddlywiki/snowwhite</li>
+
+<li>$:/themes/tiddlywiki/vanilla</li>
+
+</ul>
+</p>
 
 
 
@@ -10016,8 +10035,35 @@ Error message and password prompt
     }
 }</pre>
 </div>
+<div status="complete" title="$:/Import">
+<pre>The following tiddlers were imported:
+
+# [[$:/plugins/tobibeer/random]]</pre>
+</div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
+</div>
+<div author="Tobias Beer" bag="default" core-version="&gt;=5.1.9" dependents="" description="A filter to return one or more random titles" documentation="https://tobibeer.github.io/tw5-random" list="readme" plugin-type="plugin" requires="" revision="0" source="https://github.com/tobibeer/tw5-random" title="$:/plugins/tobibeer/random" type="application/json" version="0.1.0">
+<pre>{
+    &quot;tiddlers&quot;: {
+        &quot;$:/plugins/tobibeer/random/filter.js&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/tobibeer/random/filter.js&quot;,
+            &quot;text&quot;: &quot;/*\\\ntitle: $:/plugins/tobibeer/random/filter.js\ntype: application/javascript\nmodule-type: filteroperator\n\na filter to...\n\n@preserve\n\\*/\n(function(){\&quot;use strict\&quot;;exports.random=function(n,t,r){var e,o=[],a=[],i=parseInt(t.operand||\&quot;1\&quot;);if(isNaN(i)){i=1}n(function(n,t){a.push(t)});while(i&amp;&amp;a.length){e=Math.floor(Math.random()*a.length);o.push(a[e]);a.splice(e,1);i--}return o}})();&quot;,
+            &quot;type&quot;: &quot;application/javascript&quot;,
+            &quot;module-type&quot;: &quot;filteroperator&quot;
+        },
+        &quot;$:/plugins/tobibeer/random/readme&quot;: {
+            &quot;title&quot;: &quot;$:/plugins/tobibeer/random/readme&quot;,
+            &quot;text&quot;: &quot;The plugin $:/plugins/tobibeer/random provides:\n\n; random[]\r\n: a filter retrieving one or more random titles from the input set\r\n: `[tag[Plugins]random[3]]` — returns three titles tagged [[Plugins]]\n\n&lt;br&gt;\n\n; documentation / examples / demos...\r\n: http://tobibeer.github.io/tw5-plugins#random&quot;
+        }
+    }
+}</pre>
+</div>
+<div title="$:/status/RequireReloadDueToPluginChange">
+<pre>yes</pre>
+</div>
+<div list="$:/Import" title="$:/StoryList">
+<pre></pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-priority="0" plugin-type="theme" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.23">
 <pre>{
